@@ -9,3 +9,6 @@ Skills:
   - parsed through over three years of old purchases within Google Docs to add to this current project, using python scripts
   - heavily enhanced skills in React, JS, and CSS
   - experience with JSON, large amounts of data
+
+
+(index.css contains info for a larger project, so there is alot that doesn't relate)
