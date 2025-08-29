@@ -1,0 +1,661 @@
+.page-break {
+    background-color: red;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#FFFFF0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Winky Rough";
+}
+
+.header-section {
+    height: auto;
+    background-color: #a9edbb;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+}
+.welcome-text > h1 {
+    color: #FFFFF0;
+    font-family: "Winky Rough";
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 300px;
+}
+.searchbar > label {
+    padding: 0 20px;
+    font-family: "Winky Rough";
+    color: #50995b;
+    margin-bottom: 3px;
+}
+.searchbar > input {
+    height: 50px;
+    width: 600px;
+    padding: 0 30px;
+    border-radius: 20px;
+    border-width: 0;
+    margin-bottom: 10px;
+    font-family: "Coming Soon";
+}
+.display-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.display-section > h3 {
+    font-family: "Winky Rough";
+    color: #50995b;
+    margin-bottom: 3px;
+}
+.main-display-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-display-section > h3 {
+    margin-bottom: 2px;
+    font-family: "Coming Soon";
+    color: #355e2e;
+    margin-top: 40px;
+}
+.button-containers {
+    background-color: #a1c6ab;
+    border-radius: 15px 15px 0 0;
+    height: 100vh;
+    width: calc(100% - 175px); 
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px ;
+}
+.button-containers > :link {
+    background-color: #eef2ee;
+    border-radius: 10px;
+    border-width: 0px;
+    font-size: 2rem;
+    font-family: "Winky Rough";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-containers > a {
+    color: #355e2e;
+    text-decoration: none;
+}
+.button-containers > :link:hover {
+  background-color: #4ba87f; 
+}
+.button-containers > :link:active {
+  background-color: #368f66; 
+}
+
+.maintext-side {
+    background-color: #a9edbb;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.maintext-side > h1 {
+    color: #FFFFF0;
+    font-family: "Winky Rough";
+    font-size: 4rem;
+    margin-bottom: 1px;
+    margin-top: 10px;
+}
+.maintext-side > p {
+    margin-top: 0px;
+    font-family: "Coming Soon";
+    margin-bottom: 100px;
+}
+.home-icon {
+    height: 60px;
+    margin-top: 10px;
+}
+.home-icon:hover {
+    transform: scale(1.05);
+}
+.back-button {
+    background: transparent;
+    border: none;
+    outline: none;      
+    cursor: pointer;     
+    padding: 0;               
+}
+.sidebar {
+    align-items: center;
+    background-color: #a0e0b1;
+    display: flex;
+    flex-direction: column;
+    max-width: 60px;
+    height: 100vh;
+
+}
+
+.secondary-page {
+  height: 100vh;
+  display: flex;
+}
+
+.display-side {
+  background-color: #a1c6ab;
+  width: 100%;
+  margin: 50px 0px 50px 50px;       
+  border-radius: 50px 0 0 50px;
+  padding: 30px 0 30px 50px;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.secondary-display { 
+    flex: 1; 
+    min-height: 0; 
+    display: flex; 
+    flex-direction: column; }
+.document-buttons { 
+    position: relative;
+    flex: 1; 
+    transition: right 0.5s ease;
+    overflow-y: auto; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    overflow-x: hidden;
+}
+.document-buttons.show {
+    right: 0;
+}
+
+.document-buttons > :link {
+    background-color: #eef2ee;
+    border-radius: 10px 0px 0px 10px;
+    border-width: 0px;
+    font-size: 2rem;
+    font-family: "Winky Rough";
+    display: flex;
+    padding-left: 20px;
+}
+.document-buttons > :link:hover {
+    background-color: #4ba87f; 
+}
+.document-buttons > link:active {
+    background-color: #368f66;
+}
+.document-buttons > a {
+    color: #355e2e;
+    text-decoration: none;
+}
+
+.money-main {
+    display: flex;
+    background-color: #FFFFF0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.column-1 {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100vh;
+}
+.column-2 {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.box-1 {
+    background-color: rgb(108, 150, 126);
+    height: 40%;
+    border-radius: 0px 0px 30px 30px;
+    margin: 0px 15px 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.box-1.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.add-item-form {
+    display: flex;
+    gap: 3px;
+    width: 100%;
+}
+.box-1-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 35px;
+}
+.box-1-display > h1 {
+    font-size: 4rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #FFFFF0;
+}
+.item-name-input {
+    border-radius: 20px 5px 5px 20px;
+    border-width: 0px;
+    width: 50%;
+    padding: 0px 20px;
+    font-family: "Coming Soon";
+}
+.select-type-form {
+    border-radius: 5px;
+    border-width: 0px;
+    width: 30%;
+    font-family: "Coming Soon";
+    padding: 0px 10px;
+
+}
+.price-input-form {
+    border-radius: 5px;
+    border-width: 0px;
+    width: 10%;
+    font-family: "Coming Soon";
+    padding: 0 10px;
+}
+.price-input-form::-webkit-outer-spin-button,
+.price-input-form::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.add-item-button {
+    border-radius: 5px 20px 20px 5px;
+    border-width: 0px;
+    width: 10%;
+    font-family: "Coming Soon";
+}
+
+.box-2 {
+    background-color: rgb(123, 155, 111);
+    height: 60%;
+    border-radius: 30px 30px 0px 0px;
+    margin: 15px 15px 0px 30px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.5s ease 0.1s, opacity 0.5s ease 0.1s;
+}
+.box-2.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+.box-3 {
+    background-color: rgb(77, 157, 113);
+    height: 30%;
+    border-radius: 30px 0px 0px 30px;
+    margin: 30px 0px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: transform 0.5s ease 0.2s, opacity 0.5s ease 0.2s;
+}
+.box-3.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+.box-4 {
+    background-color: rgb(165, 191, 148);
+    height: 70vh;
+    border-radius: 30px 0px 0px 30px;
+    margin: 15px 0px 30px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 30px 0px 30px 300px;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: transform 0.5s ease 0.35s, opacity 0.5s ease 0.35s; /* delay 0.35s */
+}
+.box-4.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+.display-items-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+.item-buttons {
+    overflow-y: auto; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    width: 100%;
+}
+.items-text {
+    font-size: 4rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #FFFFF0;
+    position: absolute;
+    left: 75px;
+}
+.item-button {
+    background-color: #FFFFF0;
+    border-radius: 10px 0px 0px 10px;
+    border-width: 0px;
+    font-size: 1rem;
+    font-family: "Winky Rough";
+    display: flex;
+    padding-left: 10px;
+    justify-content: space-between;
+    color: #355e2e;
+}
+.item-buttons > :hover {
+    background-color: #4ba87f; 
+}
+.item-buttons > :active {
+    background-color: #368f66;
+}
+.item-name {
+    text-align: left;
+    flex: 1;
+    font-family: "Coming Soon";
+}
+.item-day {
+    margin-right: 5px;
+    font-weight: bold;
+}
+.currently-viewing-text {
+    font-family: "Coming Soon";
+    font-size: 1.5rem;
+    color: #eef2ee;
+    margin: 70px 0px 0px 0px;
+}
+.display-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.box-3-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.box-2-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    width: 100%;
+    position: relative;
+}
+.budget-text-display {
+    font-size: 4rem;
+    margin-bottom: 35px;
+    margin-top: 0px;
+    color: #FFFFF0;
+
+}
+.budget-detailed-display {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+.column-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.budget-budget-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 70px;
+    color: #eef2ee;
+    font-family: "Coming Soon";
+}
+.budget-budget-display > h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.spent-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    color: #eef2ee;
+    font-family: "Coming Soon";
+}
+.spent-display > h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.left-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 70px;
+    color: #eef2ee;
+    font-family: "Coming Soon";
+}
+.left-display > h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.break-line {
+    width: calc(100% - 90px);
+    height: 5px;
+    background-color: rgb(212, 216, 212);
+    margin-top: 45px;
+    border-radius: 40px;
+}
+.item-details-display {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.item-details-display > h1 {
+    text-align: right;
+    width: 100px;
+    margin: 0px;
+    font-size: 1rem;
+    color: #ddddc6;
+}
+.item-details-display > h2 {
+    text-align: right;
+    margin: 0px;
+    font-family: "Coming Soon";
+    color:#1f543c;
+}
+.item-details {
+    position: absolute;
+    top: 215px;
+    left: 185px;
+}
+.popup-overlay {
+  position: fixed;      
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;       
+  border-radius: 30px 30px 0px 0px;
+}
+.overlay-for-box-4 {
+    border-radius: 30px 0px 0px 30px;
+}
+
+.popup {
+  background: #a0e0b1;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10000;     
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.popup > h3 {
+    font-size: 1.8rem;
+    color:#FFFFF0;
+}
+.clickable-budget {
+    text-decoration: none;
+}
+.clickable-budget:hover {
+    font-weight: bold;
+    color: #355e2e;
+}
+.popup-buttons-container {
+    display: flex;
+    gap: 20px;
+}
+.popup-button {
+    height: 30px;
+    border-radius: 20px;
+    border-width: 0px;
+    width: 60px;
+    font-family: "Winky Rough";
+    color: #1f543c;
+}
+.popup-button:hover {
+    transform: scale(1.1);
+}
+.input-button {
+    height: 40px;
+    font-family: "Coming Soon";
+    border-radius: 5px;
+    border-width: 0px;
+    padding-left: 20px;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.change-item-input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 0px;
+    padding-left: 10px;
+    font-family: "Coming Soon";
+    color: #1f543c;
+    text-align: left;
+}
+.date {
+    width: 302px;
+}
+.type {
+    width: 312px;
+}
+
+.change-item-popup {
+  background: #a0e0b1;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10000;     
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.change-item-popup > h3 {
+    font-size: 1.8rem;
+    color:#FFFFF0;
+}
+.item-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+.change-item-buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%;
+    gap: 30px;
+}
+.change-item-buttons > button {
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border-width: 0px;
+    font-family: "Winky Rough";
+    color: #1f543c;
+}
+.change-item-buttons > button:hover {
+    transform: scale(1.1)
+}
+
+.arrow-images {
+  background: transparent;
+  border: none;
+  padding: 0;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.arrow-images:hover {
+    transform: scale(1.4);
+}
+.month-text {
+    margin-top: 0px;
+    font-size: 4rem;
+    color:#FFFFF0;
+}
+.left {
+    left: 100px;
+    top: 30px;
+}
+.right {
+    right: 100px;
+    top: 30px;
+}
+
+
+
